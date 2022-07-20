@@ -17,8 +17,8 @@
         display: flex;
         justify-content: space-between;
         background-color: black;
-        border-radius: 30px;
-        width: 90%;
+        border-radius: 10px;
+        width: 89vw;
         margin: 30px auto;
     }
 
@@ -67,6 +67,9 @@
 
     .my-section {
         display: flex;
+        width: 89vw;
+        margin: auto;
+        justify-content: space-between;
     }
 
     /* =============
@@ -76,6 +79,7 @@
     .btn-list {
         background-color: black;
         border-radius: 8px;
+        height: 290px;
     }
 
     .btn-2 {
@@ -105,7 +109,8 @@
     .blog-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        /* align-items: center; */
+        grid-gap: 40px;
     }
 
     /* ================
@@ -113,15 +118,15 @@
     ================ */
 
     .blog {
-        width: 230px;
+        width: 280px;
         box-shadow: 1px 1px 8px 1px #e1dede;
-        border-radius: 10px;
+        border-radius: 8px;
         text-align: justify;
     }
 
     .blog-images img {
         width: 100%;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 8px 8px 0px 0px;
     }
 
     .blog-btn {
@@ -146,4 +151,39 @@
         padding: 10px 0px;
         font-size: 1.1em;
         color: gray;
+    }
+
+    /* =============
+    My footer Styles
+    ============= */
+
+    .my-footer {
+        margin-top: 100px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .fot-title {
+        padding-top: 100px;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .fot-line {
+        border: 0.5px solid gray;
+        margin: 50px auto;
+        width: 89vw;
+    }
+
+    .fot-list-box {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .fit-list a {
+        text-decoration: none;
+        color: gray;
+        font-size: 1em;
+        padding: 20px;
     }
