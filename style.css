@@ -1,3 +1,149 @@
-* {
-    margin: 0;
-}
+    /* ========
+    Body styles
+    ======== */
+
+    * {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+    /* ===================
+    My first header styles
+    =================== */
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        border-radius: 30px;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+
+
+    .box-1 {
+        margin: 130px 0 0 50px;
+    }
+
+    .txt-clr {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 3.5em;
+    }
+
+    .first-pera {
+        font-size: 1.1em
+    }
+
+    .btn {
+        font-size: 1.1em;
+        background-color: springgreen;
+        border-radius: 8px;
+        padding: 8px 15px;
+    }
+
+    .btn:hover {
+        background-color: gold;
+    }
+
+    .box-2 {
+        margin: 20px 50px -4px 0px;
+    }
+
+    .first-img {
+        width: 500px;
+    }
+
+
+    /* ==============
+    My section styles 
+    ================*/
+
+    .my-section {
+        display: flex;
+    }
+
+    /* =============
+    My section button list style
+    =============== */
+
+    .btn-list {
+        background-color: black;
+        border-radius: 8px;
+    }
+
+    .btn-2 {
+        font-size: 1.1em;
+        background-color: springgreen;
+        border-radius: 8px;
+        display: block;
+        margin: 35px 25px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .btn-2 a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    #select-btn {
+        background-color: gold;
+    }
+
+    /* =================
+    My blog list styles
+    ================= */
+
+    .blog-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    /* ================
+    My blog styles
+    ================ */
+
+    .blog {
+        width: 230px;
+        box-shadow: 1px 1px 8px 1px #e1dede;
+        border-radius: 10px;
+        text-align: justify;
+    }
+
+    .blog-images img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .blog-btn {
+        font-size: 15px;
+        border: none;
+        background-color: rgb(221, 219, 219);
+        border-radius: 2px;
+        padding: 5px 10px;
+    }
+
+    .blog-titles {
+        margin: 10px 10px;
+    }
+
+    .blog-title {
+        padding-top: 10px;
+    }
+
+    .blog-icon {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        font-size: 1.1em;
+        color: gray;
+    }
