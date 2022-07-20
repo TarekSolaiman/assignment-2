@@ -161,6 +161,23 @@
         color: gray;
     }
 
+
+    .view-btn {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hiden-btn {
+        border: none;
+        color: white;
+        background-color: springgreen;
+        font-size: 1.2em;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+    }
+
     /* =============
     My footer Styles
     ============= */
@@ -272,12 +289,6 @@
 
         /* section responsive */
 
-        .my-section {
-            /* flex-direction: column;
-            margin-top: 0; */
-
-        }
-
         .btn-list {
             /* background: none;*/
             width: 380px;
@@ -291,6 +302,10 @@
         .blog-list {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 25px;
+        }
+
+        .view-btn {
+            visibility: visible;
         }
 
     }
