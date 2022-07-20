@@ -213,6 +213,47 @@
         padding: 20px;
     }
 
+    /* +++++++++++++++
+        WEBSITE 2
+    +++++++++++++++ */
+
+    .blog-match {
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px gray;
+    }
+
+    .flag-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .flag-images h4 {
+        padding: 0 10px;
+    }
+
+    .flag-images img {
+        width: 100px;
+    }
+
+    .match-titles {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .match-title {
+        font-size: 1.3em;
+    }
+
+    .match-p {
+        text-align: center;
+        font-size: 1.0em;
+        color: gray;
+    }
+
     /* =====================
         responsive styles
     ====================== */
