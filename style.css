@@ -13,6 +13,8 @@
     My first header styles
     =================== */
 
+
+
     .main-header {
         display: flex;
         justify-content: space-between;
@@ -25,7 +27,8 @@
 
 
     .box-1 {
-        margin: 130px 0 0 50px;
+        margin: auto;
+        width: 40%;
     }
 
     .txt-clr {
@@ -53,11 +56,12 @@
     }
 
     .box-2 {
-        margin: 20px 50px -4px 0px;
+        margin: auto;
+        width: 40%;
     }
 
     .first-img {
-        width: 500px;
+        width: 100%;
     }
 
 
@@ -68,7 +72,7 @@
     .my-section {
         display: flex;
         width: 89vw;
-        margin: auto;
+        margin: 100px auto;
         justify-content: space-between;
     }
 
@@ -77,9 +81,13 @@
     =============== */
 
     .btn-list {
+        display: flex;
+        flex-direction: column;
         background-color: black;
         border-radius: 8px;
-        height: 290px;
+        margin-right: 25px;
+        width: 380px;
+        height: 280px;
     }
 
     .btn-2 {
@@ -87,9 +95,10 @@
         background-color: springgreen;
         border-radius: 8px;
         display: block;
-        margin: 35px 25px;
+        margin: auto;
         width: 200px;
         height: 50px;
+        border: none;
     }
 
     .btn-2 a {
@@ -109,8 +118,7 @@
     .blog-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* align-items: center; */
-        grid-gap: 40px;
+        grid-gap: 25px;
     }
 
     /* ================
@@ -118,7 +126,7 @@
     ================ */
 
     .blog {
-        width: 280px;
+        width: 100%;
         box-shadow: 1px 1px 8px 1px #e1dede;
         border-radius: 8px;
         text-align: justify;
@@ -186,4 +194,103 @@
         color: gray;
         font-size: 1em;
         padding: 20px;
+    }
+
+    /* =====================
+        responsive styles
+    ====================== */
+
+    @media screen and (max-width:688px) {
+
+        /* header respinsive */
+
+        .main-header {
+            flex-direction: column;
+        }
+
+        .box-1,
+        .box-2 {
+            text-align: center;
+            width: 80%;
+            margin-top: 50px;
+        }
+
+        /* section responsive */
+
+        .my-section {
+            flex-direction: column;
+            margin-top: 0;
+
+        }
+
+        .btn-list {
+            background: none;
+            width: 100%;
+        }
+
+        .btn {
+            width: 60%;
+        }
+
+        /* footer styles */
+
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        .blog {
+            width: 80%;
+        }
+
+        .fot-list-box {
+            flex-direction: column;
+            padding: 0 0 50px 0px;
+        }
+
+        .fit-list {
+            margin-top: 40px;
+        }
+
+
+    }
+
+    @media screen and (min-width:689px) and (max-width:992px) {
+
+        /* header respinsive */
+        .main-header {
+            padding: auto;
+        }
+
+        .box-1,
+        .box-2 {
+            text-align: center;
+            width: 45%;
+            margin-top: 50px;
+        }
+
+        /* section responsive */
+
+        .my-section {
+            /* flex-direction: column;
+            margin-top: 0; */
+
+        }
+
+        .btn-list {
+            /* background: none;*/
+            width: 380px;
+            margin-right: 25px;
+        }
+
+        .btn {
+            width: 80%;
+        }
+
+        .blog-list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 25px;
+        }
+
     }
